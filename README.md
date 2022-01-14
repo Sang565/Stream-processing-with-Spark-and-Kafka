@@ -1,5 +1,5 @@
 # Stream processing with Spark and Kafka
-This Spark-based code is used for the stream processing conducted at the S-Fog tier of the two-tier fog layer in our proposed multi-layer stream and big data analytics platform.
+This Spark-based code is conducted at the S-Fog tier of the two-tier fog layer in our proposed multi-layer stream and big data analytics platform in order to perform real-time stream processing on a large number of park-slot records streamed from multiple gateways at the edge layer. 
 
 More details could be found in our publication in the IEEE Internet of Things journal here: 
 
