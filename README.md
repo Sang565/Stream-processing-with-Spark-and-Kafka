@@ -6,10 +6,6 @@ This Spark-based code is conducted at the S-Fog tier of the two-tier fog layer i
 <div align="center">The proposed four-layer platform with two-tier fog applied on the large-scale IoT-enabled smart parking use case.</div>
 <br />
 
-![image](https://user-images.githubusercontent.com/33792183/149578019-e79fc924-dff3-4eb6-8a1f-44fb28fd35a5.png)
-<div align="center">The physical structure of the experimental testbed.</div>
-<br />
-
 ![image](https://user-images.githubusercontent.com/33792183/149578455-059b7517-06aa-48c4-9ad7-9cff5a5b4e0c.png) 
 <div align="center">Allocation of functions to RPi-s in the fog layer.</div>
 <br />
