@@ -7,9 +7,9 @@ This Spark-based code is conducted at the S-Fog tier of the two-tier fog layer i
 <br />
 
 ![image](https://user-images.githubusercontent.com/33792183/149578455-059b7517-06aa-48c4-9ad7-9cff5a5b4e0c.png) 
-<div align="center">Allocation of functions to RPi-s in the fog layer.</div>
 <br />
-
+Allocation of functions to RPi-s in the fog layer.
+<br />
 
 More details could be found in our publication in the IEEE Internet of Things journal here: 
 <br />
