@@ -42,12 +42,12 @@ object SP_SlotZoneOccupancy_SFog1 {
     val sparkMaster = "spark://sfog1-master:7077"
 
     //---- for local --------------
-    val checkpointLocation = "file:///home/pi/spark-applications/5th-paper/checkpoint" //SANG: use local storage on Spark's nodes --> copy the same files and folder to ALL nodes
-    val carparkZoneCSV = "file:///home/pi/spark-applications/5th-paper/carpark1_zones.csv"
+    // val checkpointLocation = "file:///home/pi/spark-applications/5th-paper/checkpoint" //SANG: use local storage on Spark's nodes --> copy the same files and folder to ALL nodes
+    // val carparkZoneCSV = "file:///home/pi/spark-applications/5th-paper/carpark1_zones.csv"
 
-    /*//---- for HDFS  --------------
-    //val checkpointLocation = "/checkpoint" //- edit to HDFS path
-    //val carparkZoneCSV = "/carpark_zones/carpark1_zones.csv"  //SANG: edit to HDFS path*/
+    //---- for HDFS  --------------
+    val checkpointLocation = "/checkpoint" //- edit to HDFS path
+    val carparkZoneCSV = "/carpark_zones/carpark1_zones.csv"  //edit to HDFS path
 
     val kafkaBrokers_sfog1 = "sfog1-kafka01:9092"
     val kafkaBrokers_afog = "afog-kafka01:9092"
@@ -169,7 +169,6 @@ object SP_SlotZoneOccupancy_SFog1 {
       .withColumn("processing-time", current_timestamp()) 
 
       .select("nodeID", "occupied", "processing-time")  
-      //.select("nodeID", "occupied", "timestamp") //use processing-time, instead of event-time
     parkingData.printSchema()
 
     // - add more streams collecting on inputTopic-2 and -3
